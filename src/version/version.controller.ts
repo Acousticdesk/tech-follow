@@ -1,8 +1,8 @@
 import { Controller, Get } from '@nestjs/common';
-import { VersionService } from 'src/version/version.service';
+import { VersionService } from './version.service';
 
 @Controller()
-export class AppController {
+export class VersionController {
   constructor(private readonly versionService: VersionService) {}
 
   @Get('version')
