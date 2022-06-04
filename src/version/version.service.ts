@@ -2,7 +2,8 @@ import { Injectable } from '@nestjs/common';
 
 @Injectable()
 export class VersionService {
+  // TODO akicha: take a version from package.json
   getAppVersion() {
-    return process.env.npm_package_version;
+    return '0.0.1';
   }
 }
